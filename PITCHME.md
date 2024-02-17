@@ -33,7 +33,7 @@ By: Ben Hall
 ---
 ### foxglove studio
 
-![gif](extension.gif)
+![gif](https://raw.githubusercontent.com/RCMast3r/data_acq_presentation/master/extension.gif)
 
 ---
 ![Alt text](https://raw.githubusercontent.com/RCMast3r/data_acq_presentation/master/image-7.png)
