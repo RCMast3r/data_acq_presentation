@@ -86,6 +86,6 @@ By: Ben Hall
 - solves the same problem as DBC files do for the low level but is designed to be used with internet based protocols or streams
 - based around `.proto` files and these files are used with a native tool called `protoc` for creating serialization and deserialization libraries for most any language
 - nix integration and automation
-    - Tim Gallion's [nix wrapper](https://github.com/notalltim/nix-proto) for `protoc` for automated package management and vertically integrated stacks:
+    - Tim Gallion's [nix wrapper](https://github.com/notalltim/nix-proto) for `protoc` for automated creation of these libraries.
 
 ---
