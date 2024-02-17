@@ -92,7 +92,7 @@ By: Ben Hall
 ---
 ### how does protobuf connect?
 raw parsed data packs a generated protobuf message
-![bg right 90%](image-8.png)
+![bg right 90%](https://raw.githubusercontent.com/RCMast3r/data_acq_presentation/master/image-8.png)
 
 ---
 ### how does protobuf connect?
