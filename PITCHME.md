@@ -1,7 +1,7 @@
 ---
 marp: false
-title: yo
-description: Hosting Marp slide deck on the webasdf
+title: A modern data acquisition proposal
+description: A presentation on a pipeline to gather, store and vizualize arbitrary data using foxglove and mcap files
 paginate: true
 _paginate: false
 ---
