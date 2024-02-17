@@ -88,4 +88,14 @@ By: Ben Hall
 - nix integration and automation
     - Tim Gallion's [nix wrapper](https://github.com/notalltim/nix-proto) for `protoc` for automated creation of these libraries.
 
+
 ---
+### how does protobuf connect?
+raw parsed data packs a generated protobuf message
+![bg right 90%](image-8.png)
+
+---
+### how does protobuf connect?
+
+mcap files and the foxglove websocket protocol natively support protobuf messages
+
