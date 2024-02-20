@@ -121,8 +121,6 @@ await server.send_message(
 ![bg center 80%](https://media.tenor.com/rcZMAz3r-fQAAAAM/borat-very.gif)
 
 ---
-
----
 ### what is the status of things?
 - work started back in ~ mid December 2023 on this project
 - main repositories:
