@@ -1,9 +1,8 @@
 ---
 marp: false
+theme: default
 title: A modern data acquisition proposal
 description: A presentation on a pipeline to gather, store and vizualize arbitrary data using foxglove and mcap files
-paginate: true
-_paginate: false
 ---
 
 # <!--fit--> A new approach to data acquisition
@@ -94,8 +93,50 @@ By: Ben Hall
 raw parsed data packs a generated protobuf message
 ![bg right 90%](https://raw.githubusercontent.com/RCMast3r/data_acq_presentation/master/image-8.png)
 
+
 ---
 ### how does protobuf connect?
 
 mcap files and the foxglove websocket protocol natively support protobuf messages
+
+simple:
+- mcap python library guide for [writing protobuf msgs to an mcap file](https://mcap.dev/guides/python/protobuf#writing)
+
+mcap:
+```python
+mcap_writer.write_message(..., message=ExampleMsg_pb2.ExampleMsg(msg="Hello!", count=69))
+```
+foxglove studio webserver:
+```python
+# code that sends the ExampleMsg protobuf message over the foxglove websocket
+await server.send_message(
+    chan_id,
+    time.time_ns(),
+    ExampleMsg_pb2.ExampleMsg(msg="Hello!", count=420).SerializeToString(),
+)
+```
+
+---
+
+![bg center 80%](https://media.tenor.com/rcZMAz3r-fQAAAAM/borat-very.gif)
+
+---
+
+---
+### what is the status of things?
+- work started back in ~ mid December 2023 on this project
+- main repositories:
+    - https://github.com/hytech-racing/HT_CAN (CAN description)
+    - https://github.com/RCMast3r/data_acq
+    - https://github.com/RCMast3r/hytech_nixos (raspberry pi OS)
+- feature milestones reached:
+    - low-level automatic CAN library generation
+    - nixos first boot on TCU and ssh connection established
+    - live view foxglove data on entire CAN bus of other car
+- what is left to do?
+    - relational database that stores meta data about per-run mcap files
+    - local service for handling offload of mcap files from car
+    - finalizing raspberry pi nixos image (~90% there)
+
+---
 
