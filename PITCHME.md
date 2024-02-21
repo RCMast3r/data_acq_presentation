@@ -117,6 +117,14 @@ await server.send_message(
 ```
 
 ---
+### reaching our goal
+
+raw CAN bus ⮕ DBC parsing lib ⮕ raw parsed data ⮕ binary pb msg ⮕ foxglove 
+raw CAN bus ⮕ DBC parsing lib ⮕ raw parsed data ⮕ pb msg class ⮕ mcap file 
+
+ _(pb = protobuf)_
+
+---
 
 ![bg center 80%](https://media.tenor.com/rcZMAz3r-fQAAAAM/borat-very.gif)
 
@@ -128,13 +136,11 @@ await server.send_message(
     - https://github.com/RCMast3r/data_acq
     - https://github.com/RCMast3r/hytech_nixos (raspberry pi OS)
 - feature milestones reached:
-    - low-level automatic CAN library generation
-    - nixos first boot on TCU and ssh connection established
-    - live view foxglove data on entire CAN bus of other car
+    - [x] low-level automatic CAN library generation
+    - [x] nixos first boot on TCU and ssh connection established
+    - [x] live view foxglove data on entire CAN bus of other car
 - what is left to do?
-    - relational database that stores meta data about per-run mcap files
-    - local service for handling offload of mcap files from car
-    - finalizing raspberry pi nixos image (~90% there)
-
----
+    - [ ] relational database that stores meta data about per-run mcap files
+    - [ ] local service for handling offload of mcap files from car
+    - [ ] finalizing raspberry pi nixos image (~90% there)
 
